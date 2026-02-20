@@ -54,8 +54,8 @@ def extract_fields(fields):
 def is_valid(event):
     return (
         event["status"] == "Active"
-        and event["location"] == "ONLINE"
-        and event["event_category"] in ["Competition", "Paper Presentation"]
+        and event["location"] in ["ONLINE","OFFLINE"]
+        and event["event_category"] in ["Competition", "Paper Presentation","Events-Attended"]
     )
 
 # ==================================
