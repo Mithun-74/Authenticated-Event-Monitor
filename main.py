@@ -130,11 +130,6 @@ def check_events():
 # ==================================
 print("🔄 Monitor Running... (Press CTRL+C to stop)\n")
 
-while True:
-    try:
-        check_events()
-        print("⏳ Waiting 60 seconds...\n")
-    except Exception as e:
-        print("Error:", e)
-
-    time.sleep(60)
+if __name__ == "__main__":
+    print("🔎 GitHub Action Run Started...")
+    check_events()
